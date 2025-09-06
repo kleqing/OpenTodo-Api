@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.19" />
+      <PackageReference Include="StackExchange.Redis" Version="2.8.58" />
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.14.0" />
+      <PackageReference Include="System.Security.Claims" Version="4.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\OpenTodo.Domain\OpenTodo.Domain.csproj" />
+      <ProjectReference Include="..\OpenTodo.Infrastructure\OpenTodo.Infrastructure.csproj" />
+      <ProjectReference Include="..\OpenTodo.Shared\OpenTodo.Shared.csproj" />
+    </ItemGroup>
+
+</Project>
